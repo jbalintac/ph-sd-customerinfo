@@ -1,0 +1,35 @@
+[
+    {
+        "id": "guid-1",
+        "status": "Prospective",
+        "created": "2014-01-01T23:28:56.782Z",
+        "name": "Magenic Manila, Inc.",
+        "contact": "+63 (2) 222-2123",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "notes": [
+            { "id": "guid-n1", "value": "Recognized as Consultant of the Quarter on 2018Q4" },
+            { "id": "guid-n2", "value": "Worked here for over 2 years for 3 projects" },
+            { "id": "guid-n3", "value": "PWA app with offline sync, QA testing for ETL, WebApp for insurance company" }
+        ]
+    }, 
+    { 
+        "id": "guid-2",
+        "status": "NonActive",
+        "created": "2014-01-01T23:28:56.782Z",
+        "name": "Graycorp, Pty Ltd",
+        "contact": "+63 (2) 222-2123",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "notes": []
+     }, 
+    {
+        "id": "guid-3",
+        "status": "Current",
+        "created": "2014-01-01T23:28:56.782Z",
+        "name": "Misys Philippines",
+        "contact": "+63 (2) 222-2123",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "notes": [
+            { "id": "guid-n1", "value": "Used WebSphere and Banking Swift protocol" }
+        ]
+    }
+]

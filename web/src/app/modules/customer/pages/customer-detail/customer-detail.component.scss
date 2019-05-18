@@ -1,0 +1,33 @@
+@import '~bootstrap/scss/functions', '~bootstrap/scss/variables';
+
+.card.prospective {
+    background-color: $info;
+    color: $white;
+}
+
+.card.current {
+    background-color: $success;
+    color: $white;
+}
+
+.card.nonactive {
+    background-color: $secondary;
+    color: $white;
+}
+
+.button-control {
+    cursor: pointer;
+    
+    &.add-control, &.add-control:hover {
+        color: $success;
+    }
+
+    &.delete-control, &.delete-control:hover {
+        color: $danger;
+    }
+}
+
+// dt {
+//     @extend .text-muted;
+// }
+

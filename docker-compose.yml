@@ -1,0 +1,33 @@
+version: '3.0'
+services:
+
+  customerinfo-db:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: customerinfo-db
+    ports:
+      - 1433:1433
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: test@#!451aAS
+    # healthcheck:
+    #   test: sqlcmd -U SA -P test@#!451aAS
+
+  customerinfo-api:
+    build: api/.
+    container_name: customerinfo-api
+    restart: on-failure # TODO: Find a way to scaffold initial data elegantly
+    depends_on:
+      - customerinfo-db
+    ports:
+      - 5000:80
+
+  customerinfo-web:
+    build: web/.
+    container_name: customerinfo-web
+    restart: on-failure # TODO: Find a way to scaffold initial data elegantly
+    depends_on:
+      - customerinfo-api
+    healthcheck:
+      test: curl --fail -s http://customerinfo-api/api/customers/ || exit 1
+    ports:
+      - 4200:80

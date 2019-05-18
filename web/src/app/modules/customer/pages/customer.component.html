@@ -1,0 +1,37 @@
+<div id="content">
+  <h1 class="display-4 text-center">Customers</h1>
+  <div class="form-row mt-3">
+    <div class="col-md-9">
+      <input  
+        class="form-control" 
+        type="text" [formControl]="searchField"
+        placeholder="Search customer by name">
+    </div>
+    <div class="col col-sm mt-2 mt-md-0">
+      <select 
+        class="form-control" 
+        [formControl]="customerStatusField">
+        <option 
+          *ngFor="let customerStatus of customerStatuses"
+          [ngValue]="customerStatus">
+            {{customerStatus}}
+        </option>
+      </select>
+    </div>
+    <div class="btn btn-outline-secondary mt-md-0 mt-2"
+      (click)="sortCustomer()">
+      <fa-icon [icon]="sortIcon" size="lg"></fa-icon>
+    </div>
+  </div>
+  <div class="form-row mt-3">
+    <ul class="list-unstyled w-100">
+      <li 
+        class="mb-2" 
+        *ngFor="let customer of customers">
+        <a [routerLink]="['/customer/', customer.id]">
+          <app-customer-list [customer]="customer"></app-customer-list>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

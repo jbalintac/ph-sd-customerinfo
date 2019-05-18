@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/functions', '~bootstrap/scss/variables';
+
+
+.card.prospective {
+    background-color: $info;
+    color: $white;
+}
+
+.card.current {
+    background-color: $success;
+    color: $white;
+}
+
+.card.nonactive {
+    background-color: $secondary;
+    color: $white;
+}

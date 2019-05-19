@@ -1,11 +1,10 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Observable, Subject } from 'rxjs';
-import { FormControl, FormArray } from '@angular/forms';
-import { debounceTime, map, distinctUntilChanged } from 'rxjs/operators';
+import { Subject } from 'rxjs';
+import { FormControl } from '@angular/forms';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { CustomerService, NoteService, Customer, CustomerStatus, Note } from 'src/app/core';
-import {  } from 'src/app/core/services/note.service';
 
 @Component({
   selector: 'app-customer-detail',
@@ -15,17 +14,15 @@ import {  } from 'src/app/core/services/note.service';
 export class CustomerDetailComponent implements OnInit {
   customer: Customer;
   customerStatuses: string[];
-
   customerStatusField = new FormControl();
+  noteKeyUp = new Subject<Note>();
+  isLoading = false;
 
   constructor(
     private route: ActivatedRoute,
     private customerService: CustomerService,
     private noteService: NoteService
   ) { }
-
-  public noteKeyUp = new Subject<Note>();
-  public isLoading = false;
 
   ngOnInit() {
     this.route.data.subscribe(d => this.customer = d.customer);
@@ -90,5 +87,4 @@ export class CustomerDetailComponent implements OnInit {
     return Object.keys(enumme)
         .map(key => enumme[key]);
   }
-
 }

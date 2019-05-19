@@ -1,14 +1,11 @@
 
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
-import { Observable } from 'rxjs';
 import { debounceTime, map, distinctUntilChanged } from 'rxjs/operators';
 
-import { store, filterCustomer, storeCustomer } from '../../../core/store/index';
-import { Customer, CustomerStatus, SearchQuery, SortDirection } from '../../../core/models/index';
-import { CustomerService } from '../../../core/services/index';
+import { store, filterCustomer, storeCustomer,
+  CustomerService, Customer, CustomerStatus,
+  SearchQuery,  SortDirection } from 'src/app/core';
 
 
 @Component({
@@ -93,6 +90,7 @@ export class CustomerComponent implements OnInit {
     store.dispatch(filterCustomer(new SearchQuery(this.searchField.value, this.customerStatusField.value, this.sortDirection)));
   }
 
+  // TODO: Move to core utilities
   // Helper
   ToArray(enumme) {
     return Object.keys(enumme)

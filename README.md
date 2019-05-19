@@ -6,7 +6,7 @@ A very simple customer listing app.
 
 Hypothetically this should be listing B2B customers, however the current initial data represent my work experiences employers and the companies of my job applications (you can say from my point of view ─ my customers).
 
-[Live Demo](https://portfolios.nyzme.com/propellerhead-sd)
+[Live Demo](http://propellerhead.nyzme.com/)
 
 
 ## Requirement Checklist
@@ -45,8 +45,8 @@ Run `docker-compose up -d` to build and run the project. Navigate to `http://loc
 For local, none docker-compose development run in order:
 - `docker-compose up -d customerinfo-db`
 - Allow some time for customerinfo-db to finish initializing before issuing `dotnet run`
-- On ./api/ `dotnet run customerinfo-db=127.0.0.1`
-- On ./web/ `ng serve -c local`
+- On `./api/` run `dotnet run customerinfo-db=127.0.0.1`
+- On `./web/` run  `ng serve -c local`
 
 If using docker-compose:
 - `docker-compose up -d`
@@ -68,4 +68,9 @@ Todo:
 - Initial Sort
 - Import simplify
 - CORS
+
+Lightsail Setup:
+- https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-18-04-quickstart
+- https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+- https://docs.docker.com/install/linux/docker-ce/ubuntu/
 -->

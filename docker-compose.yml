@@ -18,6 +18,8 @@ services:
     restart: on-failure # TODO: Find a way to scaffold initial data elegantly
     depends_on:
       - customerinfo-db
+    healthcheck:
+      test: curl --fail -s http://localhost/api/customers/ || exit 1
     ports:
       - 5000:80
 

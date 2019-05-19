@@ -20,8 +20,7 @@ export class NoteService {
     }
 
     getSingle(id: string): Observable<Note> {
-        return this.http.get<Note[]>(this.noteUrl).pipe(map((response) =>
-        response.filter(m => m.id === id)[0] as Note));
+        return this.http.get<Note>(`${this.noteUrl}/${id}`);
     }
 
     addNote(note: Note): Observable<Note> {

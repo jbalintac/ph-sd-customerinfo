@@ -20,4 +20,5 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1 AS runtime
 WORKDIR /app
 COPY --from=build /app/customerinfo-api/out ./
-ENTRYPOINT ["dotnet", "customerinfo-api.dll customerinfo-db=customerinfo-db"]
+ENTRYPOINT ["dotnet", "customerinfo-api.dll"]
+CMD ["customerinfo-db=customerinfo-db"]

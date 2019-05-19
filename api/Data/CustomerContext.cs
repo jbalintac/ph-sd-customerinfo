@@ -21,7 +21,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.Current,
-                    CreatedDate = new DateTime(2019,06,05),
+                    CreatedDate = new DateTime(2019, 06, 05, 9, 54, 12),
                     Name = "Propellerhead.",
                     Contact = "+64 9 309 6595; info@propellerhead.co.nz",
                     Description = "We are dedicated to the powerful ideas that make the world a better place for our clients, their users, and our community. We have delivered a broad range of solutions from identity management, to sophisticated web platforms, to high volume IoT integration solutions. We are chosen primarily on the basis of our abilities as a creative problem solver."
@@ -29,7 +29,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.Prospective,
-                    CreatedDate = new DateTime(2019,03,04),
+                    CreatedDate = new DateTime(2019, 03, 04, 11, 23, 52),
                     Name = "Innoscripta GmbH",
                     Contact = "+49 (0)89 4625 8551",
                     Description = "innoscripta ist ein stark wachsendes Unternehmen im Bereich Technologietransfer, welches als Fördermittelspezialist für Forschungs- und Entwicklungsleistungen gilt und sich somit zur Nr. 1 im Bereich technische Innovationsberatung für mittelständische Unternehmen in Deutschland entwickelt hat. Die Kunden von innoscripta sind auf unterschiedlichsten Technologiefeldern tätig und gehören nicht selten zu den jeweiligen Branchenführern. Außerdem kooperiert innoscripta mit international angesehenen Universitäten."
@@ -37,7 +37,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.Prospective,
-                    CreatedDate = new DateTime(2018,11,12),
+                    CreatedDate = new DateTime(2018, 11, 12, 17, 12, 21),
                     Name = "Kognity",
                     Contact = " info@kognity.com",
                     Description = "Founded in Sweden, Kognity was designed to redefine the traditional textbook and supercharge the learning process as we know it.It all began with two students who wanted to create the types of exciting and dynamic interactive learning resources they’d always wanted to experience in their own classrooms. Resolving to create a modern textbook to fulfil the needs of the modern learner, the result was Kognity."
@@ -45,7 +45,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.Current,
-                    CreatedDate = new DateTime(2017,04,03),
+                    CreatedDate = new DateTime(2017, 04, 03, 10, 54, 23),
                     Name = "Magenic Manila, Inc.",
                     Contact = "+63 (02) 485 8400",
                     Description = "Helping Your Business MoveFast Forward. We’re Magenic. The digital technology consulting company built to get you to market faster. Our innovative digital product consulting team was created to help you get the best strategy and experience design to Fast Forward your product to market. Our rapid-fire process delivers the thinking you need to create superior digital products and get them to market faster. When you work with Magenic people, you work with best-in-class talent."
@@ -53,7 +53,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.Prospective,
-                    CreatedDate = new DateTime(2016,09,29),
+                    CreatedDate = new DateTime(2016, 09, 29, 15, 13, 54),
                     Name = "Xero Limited",
                     Contact = "AUpress@xero.com",
                     Description = "We started Xero to change the game for small business. Our beautiful cloud-based accounting software connects people with the right numbers anytime, anywhere, on any device. For accountants and bookkeepers, Xero helps build a trusted relationship with small business clients through online collaboration. We’re proud to be helping over 1.8 million subscribers worldwide transform the way they do business. And we’re just getting started."
@@ -61,7 +61,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.NonActive,
-                    CreatedDate = new DateTime(2015,06,08),
+                    CreatedDate = new DateTime(2015, 06, 08, 21, 2, 12),
                     Name = "Graycorp, Pty Ltd",
                     Contact = "+61 8 8127 5080; info@graycorp.com.au",
                     Description = "Graycorp is a South Australian owned and operated business that has been working with Australian small to medium sized companies since 1992. Building upon more than 20 years of software development experience, we offer solutions that meet the needs of Food & Beverage manufacturers and distributors who are confronted by the reality of high-volume, low-margin work. While each business is unique, there are common issues hounding today’s Food & Beverage entrepreneurs, including disparate systems, limited production control, large amounts of manual data entry, poor inventory control, and inability to trade online or electronically with their partners. The consequences are real and immediate and can have a profound impact on the profitability and ongoing viability of a business."
@@ -69,7 +69,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.NonActive,
-                    CreatedDate = new DateTime(2014,02,10),
+                    CreatedDate = new DateTime(2014, 02, 10, 16, 35, 45),
                     Name = "Misys Philippines, Inc. (acquired by Finastra)",
                     Contact = "+63 (2) 479 9300",
                     Description = "Formed in 2017 by the combination of Misys and D+H, Finastra builds and deploys innovative, next-generation technology on our open Fusion software architecture and cloud ecosystem. Our scale and geographical reach means that we can serve customers effectively, regardless of their size or location—from global financial institutions to community banks and credit unions."
@@ -77,7 +77,7 @@ namespace CustomerInfo.Data
                 new Customer() { 
                     Id = Guid.NewGuid(),
                     Status = CustomerStatus.NonActive,
-                    CreatedDate = new DateTime(2013,05,06),
+                    CreatedDate = new DateTime(2013,05,06, 20, 42, 34),
                     Name = "Betsson Technologies, Inc. (office moved to Malta)",
                     Contact = "+356 2260 3300",
                     Description = "The Sportsbook Trading team provide odds on over 200,000 events per year. From Champions League Football to Trotting. From NBA playoffs to TV specials. The team consists of passionate, dedicated sports fans who work closely with the commercial, tech and product teams to ensure our customers have the best experience possible."

@@ -21,11 +21,13 @@ Hypothetically this should be listing B2B customers, however the current initial
 | [x] | Click on customer in the list to view their details |  |
 | [x] | Add/Edit notes |  |
 | [x] | Change their status |  |
+| [x] | Full-stack application | <ul><li>Front-end: Typescript, Angular 7+, SCSS</li><li>Back-end: C#, .Net Core 2.1</li><li>Data Store: SQL Server</li></ul> |
 
 
 ## Improvement Recommendations
+- Add "Add customer" functionality (This wasn't on the requirement)
 - Create Api and Web unit tests.
-- Further refactor.
+- Further refactor on Api and Web SRP.
 
 
 ## Prerequisite
@@ -53,12 +55,17 @@ If using docker-compose:
 - On subsequent changes just run on the changed service: `docker-compose up -d --no-deps --build <service_name>`
 
 
+## Deployment
+- Change `./web/src/environments/environment.prod.ts` to correct deployed api path
+- Change `docker-compose.yml` `customerinfo-web.ports` to correct deployment port
+
+
 ## Troubleshoot
 - For error such as  `Error starting userland proxy: mkdir /port/tcp:0.0.0.0:`  try restarting you local docker
 - Make sure port 4200, 5000 are unused.
 - Make sure all containers are running and healthy when navigating to `http://localhost:4200/`
-- Allow sometime for `customerinfo-db` to finish initializing in some instance.
-- Each service is dependent to one other and it would be necessary to run the component in order: Db, Api, Web. This is already configure on the `docker-compose.yml` thus by running the `docker-compose up -d` should be enough.
+- Allow some time for `customerinfo-db` to finish initializing in some instance.
+- Each service is dependent on one other and it would be necessary to run the component in order: Db, Api, Web. This is already configured on the `docker-compose.yml` thus by running the `docker-compose up -d` should be enough.
 - Check on `docker ps -a` if containers up and healthy.
 
 

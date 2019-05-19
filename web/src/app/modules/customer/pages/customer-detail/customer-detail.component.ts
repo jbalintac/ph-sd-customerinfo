@@ -67,7 +67,7 @@ export class CustomerDetailComponent implements OnInit {
     this.isLoading = true;
     this.noteService.updateNote(note)
       .subscribe(n => {
-        this.customerService.getSingle(this.customer.id).subscribe(c => this.customer = c);
+        // this.customerService.getSingle(this.customer.id).subscribe(c => this.customer = c);
         this.isLoading = false;
     });
   }

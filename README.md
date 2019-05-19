@@ -64,8 +64,8 @@ If using docker-compose:
 - For error such as  `Error starting userland proxy: mkdir /port/tcp:0.0.0.0:`  try restarting you local docker
 - Make sure port 4200, 5000 are unused.
 - Make sure all containers are running and healthy when navigating to `http://localhost:4200/`
-- Allow sometime for `customerinfo-db` to finish initializing in some instance.
-- Each service is dependent to one other and it would be necessary to run the component in order: Db, Api, Web. This is already configure on the `docker-compose.yml` thus by running the `docker-compose up -d` should be enough.
+- Allow some time for `customerinfo-db` to finish initializing in some instance.
+- Each service is dependent on one other and it would be necessary to run the component in order: Db, Api, Web. This is already configured on the `docker-compose.yml` thus by running the `docker-compose up -d` should be enough.
 - Check on `docker ps -a` if containers up and healthy.
 
 

@@ -53,6 +53,11 @@ If using docker-compose:
 - On subsequent changes just run on the changed service: `docker-compose up -d --no-deps --build <service_name>`
 
 
+## Deployment
+- Change `./web/src/environments/environment.prod.ts` to correct deployed api path
+- Change `docker-compose.yml` `customerinfo-web.ports` to correct deployment port
+
+
 ## Troubleshoot
 - For error such as  `Error starting userland proxy: mkdir /port/tcp:0.0.0.0:`  try restarting you local docker
 - Make sure port 4200, 5000 are unused.

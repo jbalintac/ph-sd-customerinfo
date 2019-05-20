@@ -21,13 +21,14 @@ Hypothetically this should be listing B2B customers, however the current initial
 | [x] | Click on customer in the list to view their details |  |
 | [x] | Add/Edit notes |  |
 | [x] | Change their status |  |
-| [x] | Full-stack application | <ul><li>Front-end: Typescript, Angular 7+, SCSS</li><li>Back-end: C#, .Net Core 2.1</li><li>Data Store: SQL Server</li></ul> |
+| [x] | Full-stack application | <ul><li>Front-end: Typescript, Angular 7+, Redux, SCSS (Bootstrap)</li><li>Back-end: C#, .Net Core 2.1</li><li>Data Store: SQL Server</li><li>Infra: Docker, AWS Lightsail</li></ul> |
 
 
 ## Improvement Recommendations
 - Add "Add customer" functionality (This wasn't on the requirement)
 - Create Api and Web unit tests.
 - Further refactor on Api and Web SRP.
+- Font responsiveness.
 
 
 ## Prerequisite
